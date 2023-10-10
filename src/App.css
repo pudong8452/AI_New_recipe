@@ -1,0 +1,344 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5));
+}
+.navbar{
+  background-color: #000000;
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem;
+}
+.logo a{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navber{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navber .links{
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+.links li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .toggle_btn{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.action_btn{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.block {
+  background: linear-gradient(135deg, rgb(18, 109, 0), rgb(0, 211, 11));
+}
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn{
+    display: none;
+  }
+  .navbar .toggle_btn{
+    display: block;
+  }
+}
+
+/*  */
+
+.top {
+    /* 이 클래스에만 적용할 스타일 속성들을 여기에 정의합니다. */
+    position: relative; /* 예시로 '포지션:relative'를 추가하였습니다. */
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 50px;
+    display: block;
+}
+
+.banner-content h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: #fff; 
+    max-width: 800px;
+    text-align: center;
+    background-color: #833ab4;
+    background: linear-gradient(0deg, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(0deg, #fcb045, #fd1d1d, #833ab4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-content p{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    top: 120px;
+    margin: 0 auto;
+}
+
+.animated-block {
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+/*  */
+
+.sec-2_body{
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  flex-direction: column;
+  
+}
+.sec-2_body .container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+
+.sec-2_body .main-title{
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.sec-2_body .content{
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .image{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.content .image img{
+  z-index: 111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content .text-box{
+  z-index: 222;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  transform: translate(-80px,50px);
+}
+.content .text-box h3{
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.media-icons{
+  margin-top: 100px;
+}
+.media-icons a{
+  font-size: 2em;
+  margin: 60px;
+}
+
+.section-title{
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+.info-title{
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.info{
+  width: 700px;
+  margin-left: 50px;
+}
+.media-info{
+  width: 400px;
+  margin-left: 50px;
+}
+.media-info li{
+  list-style-type: none;
+  font-size: 1.4em;
+}
+.media-info li a{
+  color: #000;
+  text-decoration: none;
+}
+.media-info li:not(:last-child){
+  margin-bottom: 50px;
+}
+.media-info li:nth-child(1),
+.media-info li:nth-child(5){
+  padding-left: 100px;
+}
+.media-info li:nth-child(2),
+.media-info li:nth-child(4){
+  padding-left: 50px;
+}
+.sec-03{
+  margin-bottom: 100px;
+}
+
+/*  */
+.section-two{
+  padding: 50px 0;
+}
+.section-two img{
+  width: 80px;
+}
+.section-two .row{
+  display: flex;
+  justify-content: space-between;
+}
+.section-two .row .col{
+  width: 32%;
+  background-color: #acacac;
+  padding: 35px 25px;
+  border-radius: 10px;
+}
+.section-two h2{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.bottom-container{
+  width: 92%;
+  margin: 0 auto;
+}
+.bottom-button{
+  background-color: #8a8a8a;
+  color: #fff;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  margin: 50px auto 0 auto;
+  cursor: pointer;
+}
+.row-ptr{
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.ptr{
+  width: 8px;
+  height: 8px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.ptr.bottom-active{
+ background-color: rgb(255, 72, 72);
+}
+.sec-7,
+.sec-8,
+.sec-9{
+  display: none;
+  color: white;
+  padding: 50px 0;
+  background-color: #111222;
+}
+
+.sec-8 hr{
+  margin: 20px 0;
+}
+.sec-8 .container{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+.sec-8 .container .left,
+.sec-8 .container .right{
+  width: 50%;
+}
+.sec-8 .container .left h2{
+  font-size: 42px;
+  color: rgb(95, 95, 246);
+}
+.sec-8 .container .left h3{
+  padding: 20px 0;
+}
+.sec-8 .container .left ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: start;
+  gap: 16px;
+}
+.sec-8 .container .left ul li button{
+  color: white;
+  background-color: #1d1e2c;
+  padding:8px 12px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+.sec-8 .container .left ul li button:hover{
+  background-color: #1b1f47;
+}
+.sec-8 .container .right{
+  text-align: end;
+}
+.sec-8 .container .right h2{
+  font-size: 24px;
+  color: rgb(95, 95, 246);
+}
